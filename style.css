@@ -1,0 +1,216 @@
+/* Elements Principaux */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 8px;
+    max-width: 1440px;
+}
+
+a {
+      text-decoration: none;
+
+      color: initial ;
+}
+
+.main
+{
+width: 96%;
+}
+
+/* Navbar */
+
+.Navigation
+{
+    height: 40px;
+    display: grid;
+    padding: 5px
+}
+
+
+
+.main-nav
+{
+display: grid;
+grid-template-columns: 1fr 5fr 0.6fr 0.6fr 0.6fr;
+grid-template-rows: 1fr;
+padding: 5px ;
+grid-template-areas: "logo .. hébergement activités inscription";
+column-gap: 15px;
+}
+
+
+.Logo img
+{
+    grid-area: logo;
+}
+
+
+.NavAct
+{
+    grid-area: activités;
+    color: #0065FC;
+
+}
+
+
+.NavHéb
+{
+    grid-area: hébergement;
+    border-top: solid 3px #0065FC ;
+    color: #0065FC;
+    padding-top: 25px;
+    font-size: 16px;
+    
+}
+
+.NavHéb a:visited
+{
+    color: #0065FC;
+}
+
+
+.NavAct:hover
+{
+    color: #0065FC;
+    padding-top: 25px;
+    border-top:  3px solid #0065FC;
+}
+
+.NavAct
+{
+    grid-area: activités;
+    padding-top: 25px;
+    justify-self: center;
+    border-top: transparent solid 3px;
+    font-size: 16px;
+
+
+
+}
+.NavAct:hover a:visited
+{
+    color: #0065FC;
+    border-top:  3px solid #0065FC;
+
+}
+
+.NavAct
+{
+    grid-area: activités;
+    padding-top: 25px;
+    border-top: 3px solid #0065fc00 ;
+    font-size: 16px;
+
+
+}
+
+.Insc
+{
+    grid-area: inscription;
+    padding-top: 25px;
+    border-top: 3px solid #0065fc00 ;
+    font-size: 16px;
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+.Insc a:visited
+{
+    color: #0065FC;
+}
+
+/* Recherche */
+
+.Research-Title
+{
+    padding: 10px;
+}
+
+.Research-Title h2
+{
+    font-size: 20px;
+}
+
+.Research-Title p
+{
+    font-size: 16px;
+}
+
+.Research-bar
+{
+    display: flex;
+    position: relative;
+    min-width: 100;
+}
+
+.Img-Research
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 55px;
+height: auto;
+background-color: #F2F2F2;
+border-radius: 14px 0 0 14px;
+}
+
+.Research-bar input
+{
+border: 1px solid #F2F2F2 ;
+background-color: #ffffff;
+height: 40px;
+font-size: 20px;
+}
+.Research-bar button
+{
+    border: none;
+    border-radius: 0 14px 14px 0;
+    background-color: #0065fc;
+    color: white;
+    font-weight: 700;
+    height: 40px;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#icon-glass
+{display: none;}
+
+.Research-Field
+{
+padding-left: 20px;
+}
+
+
+/* Filtres */
+
+.Filter
+{
+    display: flex ;
+    align-items: center ;
+    font-size: 15px;
+    max-width: 80%;
+    border-radius: 35px;;
+}
+
+.Filter li {
+    display: inline-flex;
+    margin-left: 15px ;
+    font-weight: bold;
+    border: solid 1px #f2f2f2;
+    padding: 0px 20px 0px 0px;
+    margin-top: 25px;
+    border-radius: 200px;
+}
+
+.fas.fa-money-bill-wave.icon-filter
+{
+    color: #0065fc ;
+    background-color: #DEEBFF;
+    padding: 8px 8px 5px 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2000px;
+}
