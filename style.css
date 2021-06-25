@@ -763,7 +763,7 @@ padding-left: 30px;
 {
 
     .main-nav
-{ 
+ { 
     display: grid;
     max-width: 99%;
     grid-template-columns: 1fr 1fr;
@@ -772,7 +772,7 @@ padding-left: 30px;
     "logo inscription"
     "hébergement activités";
     column-gap: 15px;
-}
+ }
     
     .NavAct
     {
@@ -867,6 +867,4 @@ padding-left: 30px;
         display: flex;
         flex-direction: column;
     }
-
-
 }
