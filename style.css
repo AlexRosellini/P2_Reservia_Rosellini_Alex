@@ -7,14 +7,12 @@ body {
 }
 
 a {
-      text-decoration: none;
-
-      color: initial ;
+    text-decoration: none;
+    color: initial ;
 }
 
-.main
-{
-width: 96%;
+span {
+    font-weight: bolder;
 }
 
 /* Navbar */
@@ -26,8 +24,6 @@ width: 96%;
     padding: 5px
 }
 
-
-
 .main-nav
 {
 display: grid;
@@ -38,18 +34,15 @@ grid-template-areas: "logo .. hébergement activités inscription";
 column-gap: 15px;
 }
 
-
 .Logo img
 {
     grid-area: logo;
 }
 
-
 .NavAct
 {
     grid-area: activités;
     color: #0065FC;
-
 }
 
 
@@ -60,7 +53,6 @@ column-gap: 15px;
     color: #0065FC;
     padding-top: 25px;
     font-size: 16px;
-    
 }
 
 .NavHéb a:visited
@@ -185,8 +177,6 @@ padding-left: 20px;
 
 
 /* Filtres */
-
-
 
 .Filter
 {
@@ -485,12 +475,14 @@ padding-left: 200px;
     display: grid;
     margin-top: -20px;
     border-radius: 40px;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 0px 100px 200px 0px;
+
+    grid-area: 300px 300px 300px 300px;
+    grid-row: 300px 300px 300px 300px;
     display: grid;
     column-gap: 40px;
-    row-gap: 130px;
+    row-gap: 13px;
     margin-left: 40px;
+    margin-bottom: 50px ;
     grid-template-areas:     
     "Title Title Title Title"
     "BlocL1 BlocM1 BlocL2 BlocM3"
@@ -666,3 +658,53 @@ padding-left: 30px;
 {
     transform: scale(1.01);
 }
+
+/* Footer */
+
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 40px;
+    margin: 0px;
+    width: 100%;
+    background-color: #f2f2f2 ;
+    row-gap: 40px;
+    column-gap: 8px;
+}
+
+.footer-Bloc1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-Bloc2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-Bloc3
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a
+{
+    margin-top: 8px;
+    font-size: 14px;  
+}
+
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+.footer-Title
+{
+    font-weight: bolder;
+}
+
