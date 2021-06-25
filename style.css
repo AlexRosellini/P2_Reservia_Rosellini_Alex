@@ -717,43 +717,6 @@ padding-left: 30px;
 
 }
 
-.Activités
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 4px;
-}
-
-
-.Activités-bloc1 img
-{
-    width: 880px;
-}
-.Activités-bloc2 img
-{
-    width: 280px;
-}
-.Activités-bloc3 img
-{
-    width: 250px;
-}
-.Activités-bloc4 img
-{
-    width: 880px;
-}
-.Activités-bloc5 img
-{
-    width: 280px;
-}
-.Activités-bloc6 img
-{
-    width: 250px;
-
-}
-
-
 .MostPopular
 {
     grid-row-start: 1;
