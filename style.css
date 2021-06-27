@@ -400,8 +400,8 @@ padding: 0;
 .BlocPop
 {
     display: grid;
-    grid-auto-columns: 100px 250px;
-    grid-auto-rows: 90px 40px;
+    grid-template-columns: 100px 250px;
+    grid-template-rows: 90px 40px;
     margin: 10px;
     background: white;
     border-radius: 20px;
@@ -722,32 +722,33 @@ padding-left: 30px;
     grid-row-start: 1;
 }
 
-@media screen and (max-width: 624px)
+@media screen and (max-width: 600px)
 {
+
+
 
     .main-nav
  { 
     display: grid;
     max-width: 99%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 49% 49%;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "logo inscription"
-    "hébergement activités";
-    column-gap: 15px;
+    "hébergement  activités";
+    column-gap: 5px;
  }
     
     .NavAct
     {
         grid-area: activités;
+        display: flex;
+        justify-content: center;
+        width: 98%;
         border-bottom: 4px gray solid ;
         border-top: none;
         padding-bottom: 10px;
         margin-top: -5px;
-        padding-left: 70px;
-        width: 70%;
-        max-width: 96%;
-        min-width: none;
     }
 
     .NavAct:hover
@@ -762,9 +763,9 @@ padding-left: 30px;
         border-bottom: 4px #0065FC solid ;
         border-top: none;
         margin-top: -5px;
-        padding-left: 80px;
-        padding-bottom: 10px;
-        width: 220px
+        display: flex;
+        justify-content: center;
+
     }
 
     .Logo
@@ -778,6 +779,8 @@ padding-left: 30px;
         grid-area: inscription;
         padding-left: 70px ;
         margin-top: -10px ;
+        max-width: auto;
+        
     }
 
     .Research-Title h2
@@ -787,15 +790,57 @@ padding-left: 30px;
 
     .Research-bar 
     {
-        display: flex;
-        justify-content: center;
+        margin-left: 2%;
+        width: 95%;
     }
 
+    .Research-bar button
+{
+    display: none;
+}
+
+    #icon-glass
+{
+        display: table;
+}
     .Hébergement
     {
         height: 100%;
         display: flex;
         flex-direction: column;
+        background: none;
+    }
+
+
+    .Blocs-Hébergements
+    {
+        border: 1px #F2F2F2 solid;
+        padding: 1%;
+        box-shadow: 4px 4px 4px #f2f2f2;
+
+    }
+
+    .MostPopular
+    {
+        width: 100%;
+        margin-left: 4px ;
+        border-radius: 0px;
+    }
+
+    .BlocPop
+    {
+        font-size: 16px;
+        grid-template-columns: 100px 180px;
+    }
+
+    .MostPopular h2
+    {
+        width: 25%;
+    }
+
+    .fas.fa-chart-line
+    {
+        margin: -20%;
     }
 
     .Activités
@@ -803,6 +848,7 @@ padding-left: 30px;
         display: flex;
         flex-direction: column;
         padding-right: 40px;
+        font-size: 0.8em;
     }
 
     .Activités-bloc1 img
@@ -830,4 +876,4 @@ padding-left: 30px;
         display: flex;
         flex-direction: column;
     }
-}
+} 
