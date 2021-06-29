@@ -1,16 +1,19 @@
 /* Elements Principaux */
 
-body {
+body 
+{
     font-family: 'Raleway', sans-serif;
     margin: 4px;
 }
 
-a {
+a 
+{
     text-decoration: none;
     color: initial ;
 }
 
-span {
+span 
+{
     font-weight: bolder;
 }
 
@@ -19,7 +22,6 @@ span {
 .Navigation
 {
     height: 40px;
-    display: grid;
     padding: 5px
 }
 
@@ -28,9 +30,8 @@ span {
 display: grid;
 grid-template-columns: 1fr 5fr 0.6fr 0.6fr 0.6fr;
 grid-template-rows: 1fr;
-max-width: 99%;
 padding: 5px ;
-grid-template-areas: "logo .. hébergement activités inscription";
+grid-template-areas: "logo . hébergement activités inscription";
 column-gap: 15px;
 }
 
@@ -71,19 +72,15 @@ column-gap: 15px;
 .NavAct
 {
     grid-area: activités;
-    padding-top: 25px;
     justify-self: center;
     border-top: transparent solid 3px;
     font-size: 16px;
-
-
-
 }
+
 .NavAct:hover a:visited
 {
     color: #0065FC;
     border-top:  3px solid #0065FC;
-
 }
 
 .NavAct
@@ -92,8 +89,6 @@ column-gap: 15px;
     padding-top: 25px;
     border-top: 3px solid #0065fc00 ;
     font-size: 16px;
-
-
 }
 
 .Insc
@@ -131,7 +126,6 @@ column-gap: 15px;
 .Research-bar
 {
     display: flex;
-    position: relative;
 }
 
 .Img-Research
@@ -152,6 +146,7 @@ border: 1px solid #F2F2F2 ;
 background-color: #ffffff;
 height: 40px;
 font-size: 20px;
+padding-left: 20px;
 }
 
 .Research-bar button
@@ -169,12 +164,6 @@ font-size: 20px;
 
 #icon-glass
 {display: none;}
-
-.Research-Field
-{
-padding-left: 20px;
-}
-
 
 /* Filtres */
 
@@ -200,80 +189,43 @@ padding-left: 20px;
     margin-left: 10px ;
     font-weight: bold;
     border: solid 1px #f2f2f2;
+    height: 30px;
     padding: 0px 20px 0px 0px;
     margin-top: 25px;
     border-radius: 200px;
 }
 
-.fas.fa-money-bill-wave.icon-filter
+#IconFiltres
 {
     color: #0065fc ;
     background-color: #DEEBFF;
-    padding: 8px 10px 5px 10px;
-    width: 20px;
-    margin-right: 10px;
-    height: 20px;
-    border-radius: 200px;
-}
-
-.fas.fa-heart.icon-filter
-{
-
-    color: #0065fc ;
-    background-color: #DEEBFF;
-    padding: 8px 10px 5px 10px;
-    width: 20px;
-    margin-right: 10px;
-    height: 20px;
-    border-radius: 200px;
- 
-}
-
-.fas.fa-dog.icon-filter
-{
-
-    color: #0065fc ;
-    background-color: #DEEBFF;
-    padding: 8px 10px 5px 10px;
-    width: 20px;
-    margin-right: 10px;
-    height: 20px;
-    border-radius: 200px;
-
-}
-
-.fas.fa-child.icon-filter
-{
-
-    color: #0065fc ;
-    background-color: #DEEBFF;
-    padding: 8px 8px 5px 14px;
-    width: 18px;
-    margin-right: 10px;
-    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;  
+    width: 35px;
+    height: 30px;
     border-radius: 200px;
  
  }
-
 
  .Filter li:hover
  {
    background-color: #DEEBFF;
-   transform: scale(1.1);
+   transform: scale(1.2);
  }
+
+ /* Info Recherche */
 
 .Info-research
 {
     display: flex;
     align-items: center;
     margin: 10px ;
-
-
 }
 
 .Info-research p
 {
-    display: flex;
     padding-left: 15px;
 }
 
@@ -289,17 +241,16 @@ padding-left: 20px;
 
 /* Section */
 
-.Section
+Section
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 99%;
     margin: 4px;
-    gap: 2em;
-    
+    gap: 2em;  
 }
 
-.Section h1
+Section h1
 {
     display: none;
 }
@@ -311,10 +262,6 @@ padding-left: 20px;
     display: grid;
     background-color: #f2f2f2;
     border-radius: 40px;
-    grid-column: 280px 280px;
-    grid-row: 60px 210px 210px;
-    column-gap: 0px;
-    row-gap: 0px;
     grid-template-areas:     
     "Title Title Title"
     "Bloc Bloc Bloc"
@@ -334,6 +281,7 @@ padding-left: 20px;
 {
     grid-area: Title;
     padding: 18px;
+    margin-bottom: -20px;
     font-weight: bolder;
 }
 
@@ -711,7 +659,7 @@ padding-left: 30px;
 @media screen and (max-width: 1024px)
 {
 
-.Section
+Section
 {
     display: flex;
     flex-direction: column-reverse;
@@ -824,8 +772,6 @@ padding-left: 30px;
 
 @media screen and (max-width: 600px)
 {
-
-
 
     .main-nav
  { 
