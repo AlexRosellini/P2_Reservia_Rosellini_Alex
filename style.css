@@ -245,7 +245,6 @@ Section
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 99%;
     margin: 4px;
     gap: 2em;  
 }
@@ -253,6 +252,11 @@ Section
 Section h1
 {
     display: none;
+}
+
+.fas.fa-star.Empty
+{
+    color: grey ;
 }
 
 /* Hébergement */
@@ -281,7 +285,7 @@ Section h1
 {
     grid-area: Title;
     padding: 18px;
-    margin-bottom: -20px;
+    margin-bottom: -25px;
     font-weight: bolder;
 }
 
@@ -296,16 +300,14 @@ Section h1
 .Hébergement img
 {
     width: 100%;    
-    height: 100px;
+    height: 120px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 .Hébergement .name
 {
-text-align: left;
-margin-top: -4px;
-padding: 0;
+    margin-top: 0px;
 }
 
 .Hébergement .price-desc
@@ -313,13 +315,12 @@ padding: 0;
 
     text-align: left;
     margin-top: -12px;
-    padding: 0;
+    padding: 4px;
     
 }
 
 .Hébergement .stars
 {
-    text-align: left;
     margin-top: -12px;
     padding-left: 4px; 
     color: #0065fc; 
@@ -327,7 +328,7 @@ padding: 0;
 
 .Blocs-Hébergements:hover
 {
-    transform: scale(1.01);
+    transform: scale(1.04);
 }
 
 /* Popular */
@@ -336,54 +337,36 @@ padding: 0;
 {
     background-color: #f2f2f2;
     border-radius: 40px;
-    row-gap: 5px;
-    height: 100%;
-    width: 100%;
 }
 
 .MostPopular h2
 {
-    padding: 0 10px 10px 10px;
+    padding: 5px 15px 15px 15px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .BlocPop
 {
     display: grid;
-    grid-template-columns: 100px 250px;
+    grid-template-columns: 100px 400px;
     grid-template-rows: 90px 40px;
     margin: 10px;
     background: white;
     border-radius: 20px;
     border: 50px solid white;
-    column-gap: 4px;
+    column-gap: 9px;
     border: white 4px;
-
     grid-template-areas: 
     "Img Name"
     "Img Stars";
-}
-
-.BlocpopTitle p
-{
-grid-area: Name;
-margin-left: 4px;
-}
-
-.BlocpopTitle h3
-{
-grid-area: Name;
-margin-left: 4px;
 }
 
 .StarsP
 {
 grid-area: Stars;
 color: #0065fc;
-margin-top: 15px;
-margin-left: 4px;
+margin-top: 13px;
 }
 
 .BlocPop img
@@ -396,38 +379,20 @@ margin-left: 4px;
     grid-area: Img;
 }
 
-.fas.fa-chart-line
-{
-padding-left: 200px;
-}
-
 .BlocPop:hover
 {
-    transform: scale(1.01);
+    transform: scale(1.04);
 }
-
-.fas.fa-star.Empty
-{
-    color: grey ;
-}
-
 
 /* Activités */
 
 .Activités
 {
     display: grid;
-    margin-top: -20px;
+    margin: 20px 40px 50px 20px;
     border-radius: 40px;
-
-    grid-area: 300px 300px 300px;
-    grid-row: 300px 300px 300px;
-    display: grid;
-    column-gap: 40px;
-    row-gap: 13px;
-    margin-left: 40px;
-    margin-right: 2px;
-    margin-bottom: 50px ;
+    column-gap: 30px;
+    row-gap: 15px;
     grid-template-areas:     
     "Title Title Title Title"
     "BlocL1 BlocM1 BlocL2 BlocM3"
@@ -437,16 +402,13 @@ padding-left: 200px;
 .ActTitle
 {
     grid-area: Title;
-    padding-top: 50px;
+    margin-top: 40px;
 }
 
 .Activités img
 {
     width: 100%;
-    height: 100%;
-    object-fit:cover;
-
-    row-gap: 5px;
+    object-fit: cover;
     border-radius: 40px 40px 0 0;
     grid-area: Img;
 }
@@ -454,43 +416,39 @@ padding-left: 200px;
 .Activités-bloc1
 {
     grid-area: BlocL1;
-    box-shadow: 4px 4px 4px #f2f2f2;
+    box-shadow: 4px 4px 4px 4px #f2f2f2;
     border-radius: 40px;
     height: 430px;
-    margin: 0;
     overflow: hidden;
-
 }
 
 .Activités-bloc1 h3
 {
-margin: 8px;
-padding-left: 10px;
+    margin: 8px 8px 8px 20px;
 }
 
 .Activités-bloc1 img
 {
-    height: 370px;
+    height: 390px;
 }
 
-.Activités-bloc1:hover
+.Activités-bloc1:hover 
 {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .Activités-bloc2
 {
     grid-area: BlocM1;
     height: 200px;
-    box-shadow: 4px 4px 4px #f2f2f2;
+    box-shadow: 4px 4px 4px 4px #f2f2f2;
     border-radius: 40px;
     overflow: hidden;
 }
 
 .Activités-bloc2 h3
 {
-margin: 5px;
-padding-left: 30px;
+    margin: 5px 5px 5px 20px
 }
 
 .Activités-bloc2 img
@@ -500,14 +458,13 @@ padding-left: 30px;
 
 .Activités-bloc2:hover
 {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
-
 
 .Activités-bloc3
 {
     grid-area: BlocM2;
-    box-shadow: 4px 4px 4px #f2f2f2;
+    box-shadow: 4px 4px 4px 4px #f2f2f2;
     border-radius: 40px;
     height: 200px;
     overflow: hidden;
@@ -515,8 +472,7 @@ padding-left: 30px;
 
 .Activités-bloc3 h3
 {
-margin: 5px;
-padding-left: 30px;
+    margin: 5px 5px 5px 20px;
 }
 
 .Activités-bloc3 img
@@ -526,7 +482,7 @@ padding-left: 30px;
 
 .Activités-bloc3:hover
 {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .Activités-bloc4
@@ -540,18 +496,17 @@ padding-left: 30px;
 
 .Activités-bloc4 h3
 {
-margin: 8px;
-padding-left: 10px;
+    margin: 8px 8px 8px 20px; 
 }
 
 .Activités-bloc4 img
 {
-height: 370px;
+height: 380px; 
 } 
 
 .Activités-bloc4:hover
 {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .Activités-bloc5
@@ -565,8 +520,7 @@ height: 370px;
 
 .Activités-bloc5 h3
 {
-margin: 5px;
-padding-left: 30px;
+    margin: 5px 5px 5px 20px;
 }
 
 .Activités-bloc5 img
@@ -576,7 +530,7 @@ padding-left: 30px;
 
 .Activités-bloc5:hover
 {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .Activités-bloc6
@@ -590,8 +544,7 @@ padding-left: 30px;
 
 .Activités-bloc6 h3
 {
-margin: 5px;
-padding-left: 30px;
+    margin: 5px 5px 5px 20px;
 }
 
 .Activités-bloc6 img
@@ -601,7 +554,7 @@ padding-left: 30px;
 
 .Activités-bloc6:hover
 {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -611,7 +564,6 @@ padding-left: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 5px;
     padding-left: 45px;
     padding-bottom: 30px;
     max-width: 96%;
@@ -663,8 +615,6 @@ Section
 {
     display: flex;
     flex-direction: column-reverse;
-    grid-Template-rows: 1fr 1fr ;
-    grid-Template-columns: 1fr ;
 
 }
 
@@ -891,9 +841,10 @@ Section
         width: 25%;
     }
 
+
     .fas.fa-chart-line
     {
-        margin: -20%;
+        padding-left: 200px;
     }
 
     .Activités
