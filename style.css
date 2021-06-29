@@ -786,8 +786,12 @@ height: 380px;
 
     .Research-bar 
     {
-        margin-left: 2%;
-        width: 95%;
+        margin-left: 1%;
+    }
+
+    .Research-bar input 
+    {
+        width: 70%;
     }
 
     .Research-bar button
@@ -795,15 +799,10 @@ height: 380px;
     display: none;
     }
 
-    .Img-Research
-    {
-     width: 40%;
-    }
-
     #icon-glass
     {
         display: table;
-        width: 40%;
+        width: 10%;
     }
  
     /*Hébergement*/
@@ -878,5 +877,6 @@ height: 380px;
     {
         display: flex;
         flex-direction: column;
+        margin-top: 50px;
     }
 } 
