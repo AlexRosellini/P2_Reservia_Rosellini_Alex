@@ -178,7 +178,7 @@ padding-left: 20px;
 .Filter h3
 {
     margin-top: 48px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     padding-left: 15px;
 }
@@ -189,7 +189,7 @@ padding-left: 20px;
     margin-left: 10px ;
     font-weight: bold;
     border: solid 1px #f2f2f2;
-    height: 30px;
+    height: 50px;
     padding: 0px 20px 0px 0px;
     margin-top: 25px;
     border-radius: 200px;
@@ -203,8 +203,8 @@ padding-left: 20px;
     align-items: center;
     justify-content: center;
     margin-right: 5px;  
-    width: 35px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 200px;
  
  }
@@ -212,7 +212,7 @@ padding-left: 20px;
  .Filter li:hover
  {
    background-color: #DEEBFF;
-   transform: scale(1.2);
+   transform: scale(1.1);
  }
 
  /* Info Recherche */
@@ -336,12 +336,15 @@ Section h1
 .MostPopular
 {
     background-color: #f2f2f2;
+    background-position: center;
+    height: 550px;
     border-radius: 40px;
 }
 
 .MostPopular h2
 {
     padding: 5px 15px 15px 15px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
@@ -393,6 +396,7 @@ margin-top: 13px;
     border-radius: 40px;
     column-gap: 30px;
     row-gap: 15px;
+    font-size: 13px;
     grid-template-areas:     
     "Title Title Title Title"
     "BlocL1 BlocM1 BlocL2 BlocM3"
@@ -611,33 +615,32 @@ height: 380px;
 @media screen and (max-width: 1024px)
 {
 
-Section
-{
+    /*Grande tailles*/
+    /* Elements Principaux Media Queries*/
+    
+    Section
+    {
     display: flex;
     flex-direction: column-reverse;
+    }
 
-}
-
-.MostPopular
-{
-    grid-row-start: 1;
-}
-
-.Activités
-{
-    font-size: 0.8em;
-}
-
-@media screen  and ( min-width: 640px) and (max-width: 1024px)
-{
     .Activités
     {
-        display: flex;
+    font-size: 0.8em;
+    }
+
+@media screen  and ( min-width: 601px) and (max-width: 1024px)
+{
+
+    /*Tablettes/Vue paysage*/
+    /*Activités*/
+
+    .Activités
+    {
         display: grid;
-        margin-top: -40px ;
-        padding: 4px;
         row-gap: 30px;
-        column-gap: 10px;
+        column-gap: 5px;
+        padding-left: 50px;
         grid-template-columns: 48% 48%;
         grid-template-rows:  100px 240px 220px 230px 240px ;
         grid-template-areas: 
@@ -651,14 +654,13 @@ Section
     .ActTitle
     {
         grid-area: Title;
+        font-size: 24px;
     }
 
     .Activités-bloc1
     {
         grid-area: Bloc1;
-        display: flex;
-        justify-content: center;
-        width: 90%;
+        width: 95%;
         height: 240px;
     }
 
@@ -670,7 +672,7 @@ Section
     .Activités-bloc2
     {
         grid-area: Bloc2;
-        width: 85%;
+        width: 95%;
         height: 190px;
     }
 
@@ -682,7 +684,7 @@ Section
     .Activités-bloc3
     {
         grid-area: Bloc3;
-        width: 85%;
+        width: 95%;
         height: 190px;
     }
 
@@ -694,7 +696,8 @@ Section
     .Activités-bloc4
     {
         grid-area: Bloc4;
-        width: 90%;
+        margin-left: 10px;
+        width: 95%;
         height: 240px;
     }
 
@@ -706,34 +709,33 @@ Section
     .Activités-bloc5
     {
         grid-area: Bloc5;
-        width: 85%;
+        width: 95%;
         height: 190px;
     }
     .Activités-bloc6
     {
         grid-area: Bloc6;
-        width: 85%;
+        width: 95%;
         height: 190px;
     }
-
 }
-
 }
 
 @media screen and (max-width: 600px)
 {
-
+    /*Téléphones*/
+    /*Navigation*/
+        
     .main-nav
- { 
-    display: grid;
-    max-width: 99%;
-    grid-template-columns: 49% 49%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "logo inscription"
-    "hébergement  activités";
-    column-gap: 5px;
- }
+    { 
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo inscription"
+        "hébergement  activités";
+        column-gap: 5px;
+    }
     
     .NavAct
     {
@@ -743,7 +745,6 @@ Section
         width: 98%;
         border-bottom: 4px gray solid ;
         border-top: none;
-        padding-bottom: 10px;
         margin-top: -5px;
     }
 
@@ -773,10 +774,10 @@ Section
     .Insc
     {
         grid-area: inscription;
-        padding-left: 70px ;
-        margin-top: -10px ;
-        
+        padding: 10px 0px 0px 60px ;
     }
+
+    /*Recherche*/
 
     .Research-Title h2
     {
@@ -800,31 +801,31 @@ Section
     }
 
     #icon-glass
-{
+    {
         display: table;
         width: 40%;
-}
+    }
+ 
+    /*Hébergement*/
 
     .Hébergement
     {
-        height: 100%;
         display: flex;
         flex-direction: column;
         background: none;
+        margin-top: -40px;
     }
-
 
     .Blocs-Hébergements
     {
         border: 1px #F2F2F2 solid;
-        padding: 1%;
-        box-shadow: 4px 4px 4px #f2f2f2;
+        padding: 10px;
+        box-shadow: 4px 4px 4px 4px #f2f2f2;
     }
 
     .MostPopular
     {
-        width: 96%;
-        margin-left: 4px ;
+        margin-left: 4px;
         border-radius: 0px;
     }
 
@@ -832,29 +833,25 @@ Section
     {
         font-size: 16px;
         grid-template-columns: 100px 180px;
-        box-shadow: 4px 4px 4px #f2f2f2;
-
     }
 
     .MostPopular h2
     {
-        width: 25%;
+        font-size: 24px;
     }
-
 
     .fas.fa-chart-line
     {
-        padding-left: 200px;
+        padding-left: 10%;
     }
 
     .Activités
     {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-left: 2%;
-        font-size: 0.8em;
+        justify-content: center;
+        margin: -20px 10px 10px 10px;
+        font-size: 1em;
     }
 
     .Activités-bloc1 img
