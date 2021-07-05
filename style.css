@@ -125,6 +125,7 @@ column-gap: 15px;
 
 .Research-bar
 {
+    padding: 10px;
     display: flex;
 }
 
@@ -170,9 +171,8 @@ padding-left: 20px;
 .Filter
 {
     display: flex ;
-    align-items: center ;
     font-size: 15px;
-    max-width: 80%;
+    max-width: 95%;
 }
 
 .Filter h3
@@ -190,8 +190,8 @@ padding-left: 20px;
     font-weight: bold;
     border: solid 1px #f2f2f2;
     height: 50px;
-    padding: 0px 20px 0px 0px;
-    margin-top: 25px;
+    padding: 0px 10px 0px 0px;
+    margin-top: 20px;
     border-radius: 200px;
 }
 
@@ -293,7 +293,7 @@ Section h1
 {
     background: white;
     border-radius: 20px;
-    border: 5px solid white;
+    border: 4px solid white;
     margin: 14px;
 }
 
@@ -308,6 +308,7 @@ Section h1
 .Hébergement .name
 {
     margin-top: 0px;
+    padding-left: 6px;
 }
 
 .Hébergement .price-desc
@@ -315,7 +316,7 @@ Section h1
 
     text-align: left;
     margin-top: -12px;
-    padding: 4px;
+    padding-left: 6px;
     
 }
 
@@ -357,7 +358,6 @@ Section h1
     margin: 10px;
     background: white;
     border-radius: 20px;
-    border: 50px solid white;
     column-gap: 9px;
     border: white 4px;
     grid-template-areas: 
@@ -724,6 +724,7 @@ height: 380px;
 @media screen and (max-width: 600px)
 {
     /*Téléphones*/
+    
     /*Navigation*/
         
     .main-nav
@@ -776,6 +777,26 @@ height: 380px;
         grid-area: inscription;
         padding: 10px 0px 0px 60px ;
     }
+
+    /*Filter*/
+    
+        .Filter
+        {
+            flex-direction: column;
+        }
+
+        .Filter li
+        {
+            margin-top: 10px;
+        }
+
+        .Filter h3 
+        {
+            margin: 15px 0px 5px 0px;            
+        }
+
+
+
 
     /*Recherche*/
 
@@ -849,8 +870,8 @@ height: 380px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: -20px 10px 10px 10px;
-        font-size: 1em;
+        font-size: 0.85em;
+        margin-left: 50px;
     }
 
     .Activités-bloc1 img
@@ -861,8 +882,19 @@ height: 380px;
     .Activités-bloc1
     {
     height: 200px;
+    margin-bottom: 10px;
+    }   
+
+    .Activités-bloc2
+    {
+    margin-bottom: 10px;
     }   
   
+    .Activités-bloc3
+    {
+    margin-bottom: 10px;
+    }   
+
     .Activités-bloc4 img
     {
     height: 160px;
@@ -871,6 +903,13 @@ height: 380px;
     .Activités-bloc4
     {
     height: 200px;
+    margin-bottom: 10px;
+    font-size: 0.80em;
+    }   
+
+    .Activités-bloc5
+    {
+    margin-bottom: 10px;
     }   
 
     .footer
