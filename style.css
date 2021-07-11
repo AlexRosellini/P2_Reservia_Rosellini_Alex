@@ -41,19 +41,21 @@ span {
 
 .NavHeb {
   grid-area: hébergement;
-  border-top: solid 3px #0065fc;
-  color: #0065fc;
+  border-top: solid 3px transparent;
   padding-top: 25px;
   font-size: 16px;
 }
 
-.NavHeb a:visited {
+nav a:hover {
   color: #0065fc;
 }
 
 .NavAct:hover {
-  color: #0065fc;
   padding-top: 25px;
+  border-top: 3px solid #0065fc;
+}
+
+.NavHeb:hover {
   border-top: 3px solid #0065fc;
 }
 
@@ -211,9 +213,10 @@ span {
 
 Section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 59% 39%;
   margin: 4px;
   gap: 2em;
+  padding-left: 10px;
 }
 
 Section h1 {
@@ -229,7 +232,8 @@ Section h1 {
 .Hebergement {
   display: grid;
   background-color: #f2f2f2;
-  border-radius: 40px;
+  border-radius: 20px;
+  padding-bottom: 10px;
   grid-template-areas:
     "Title Title Title"
     "Bloc Bloc Bloc"
@@ -239,7 +243,8 @@ Section h1 {
 
 .Showmore {
   grid-area: Aff;
-  margin-left: 70px;
+  margin-left: 20px;
+  margin-top: 20px;
   padding-bottom: 15px;
   font-weight: bolder;
 }
@@ -255,7 +260,11 @@ Section h1 {
   background: white;
   border-radius: 20px;
   border: 4px solid white;
-  margin: 14px;
+  margin-right: 14px;
+  margin-left: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  min-width: 170px;
 }
 
 .Hebergement img {
@@ -283,7 +292,7 @@ Section h1 {
 }
 
 .Blocs-Hebergements:hover {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /* Popular */
@@ -291,8 +300,11 @@ Section h1 {
 .MostPopular {
   background-color: #f2f2f2;
   background-position: center;
-  height: 550px;
-  border-radius: 40px;
+  height: 580px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .MostPopular h2 {
@@ -304,9 +316,10 @@ Section h1 {
 
 .BlocPop {
   display: grid;
-  grid-template-columns: 100px 400px;
-  grid-template-rows: 90px 40px;
+  grid-auto-columns: 20% 78%;
+  grid-auto-rows: 90px 40px;
   margin: 10px;
+  margin-top: 30px;
   background: white;
   border-radius: 20px;
   column-gap: 9px;
@@ -332,7 +345,7 @@ Section h1 {
 }
 
 .BlocPop:hover {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /* Activites */
@@ -340,7 +353,7 @@ Section h1 {
 .Activites {
   display: grid;
   margin: 20px 40px 50px 20px;
-  border-radius: 40px;
+  border-radius: 20px;
   column-gap: 30px;
   row-gap: 15px;
   font-size: 13px;
@@ -353,19 +366,21 @@ Section h1 {
 .ActTitle {
   grid-area: Title;
   margin-top: 40px;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 .Activites img {
   width: 100%;
   object-fit: cover;
-  border-radius: 40px 40px 0 0;
+  border-radius: 20px 20px 0 0;
   grid-area: Img;
 }
 
 .Activites-bloc1 {
   grid-area: BlocL1;
   box-shadow: 4px 4px 4px 4px #f2f2f2;
-  border-radius: 40px;
+  border-radius: 20px;
   height: 430px;
   overflow: hidden;
 }
@@ -379,14 +394,14 @@ Section h1 {
 }
 
 .Activites-bloc1:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .Activites-bloc2 {
   grid-area: BlocM1;
   height: 200px;
   box-shadow: 4px 4px 4px 4px #f2f2f2;
-  border-radius: 40px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -399,13 +414,13 @@ Section h1 {
 }
 
 .Activites-bloc2:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .Activites-bloc3 {
   grid-area: BlocM2;
   box-shadow: 4px 4px 4px 4px #f2f2f2;
-  border-radius: 40px;
+  border-radius: 20px;
   height: 200px;
   overflow: hidden;
 }
@@ -419,14 +434,14 @@ Section h1 {
 }
 
 .Activites-bloc3:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .Activites-bloc4 {
   grid-area: BlocL2;
   box-shadow: 4px 4px 4px #f2f2f2;
   height: 430px;
-  border-radius: 40px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -439,13 +454,13 @@ Section h1 {
 }
 
 .Activites-bloc4:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .Activites-bloc5 {
   grid-area: BlocM3;
   box-shadow: 4px 4px 4px #f2f2f2;
-  border-radius: 40px;
+  border-radius: 20px;
   height: 200px;
   overflow: hidden;
 }
@@ -459,13 +474,13 @@ Section h1 {
 }
 
 .Activites-bloc5:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .Activites-bloc6 {
   grid-area: BlocM4;
   box-shadow: 4px 4px 4px #f2f2f2;
-  border-radius: 40px;
+  border-radius: 20px;
   height: 200px;
   overflow: hidden;
 }
@@ -479,21 +494,19 @@ Section h1 {
 }
 
 .Activites-bloc6:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* Footer */
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  padding-left: 45px;
-  padding-bottom: 30px;
-  max-width: 96%;
+  grid-auto-columns: 32% 32% 32%;
+  grid-template-areas: "bloc1 bloc2 bloc3";
+  width: 97%;
+  padding-left: 40px;
   background-color: #f2f2f2;
-  row-gap: 40px;
-  column-gap: 8px;
+  column-gap: 10px;
 }
 
 .footer-Bloc1 {
@@ -530,24 +543,36 @@ Section h1 {
   /*Grande tailles*/
   /* Elements Principaux Media Queries*/
 
-  Section {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
   .Activites {
     font-size: 0.8em;
-  }
+  }    
+  
+    Section {
+      display: flex;
+      flex-direction: column-reverse;
+    }  
 
   @media screen and (min-width: 601px) and (max-width: 1024px) {
     /*Tablettes/Vue paysage*/
+     
+     Section {
+      margin-right: -15px;
+    }
+
+    .BlocPop {
+      width: 90%;
+      margin-left: 40px;
+    }
+ 
     /*Activites*/
+
 
     .Activites {
       display: grid;
+      width: 100%;
       row-gap: 30px;
-      column-gap: 5px;
-      padding-left: 50px;
+      column-gap: 30px;
+      padding-left: 10px;
       grid-template-columns: 48% 48%;
       grid-template-rows: 100px 240px 220px 230px 240px;
       grid-template-areas:
@@ -565,7 +590,7 @@ Section h1 {
 
     .Activites-bloc1 {
       grid-area: Bloc1;
-      width: 95%;
+      width: 97%;
       height: 240px;
     }
 
@@ -575,7 +600,7 @@ Section h1 {
 
     .Activites-bloc2 {
       grid-area: Bloc2;
-      width: 95%;
+      width: 97%;
       height: 190px;
     }
 
@@ -585,7 +610,7 @@ Section h1 {
 
     .Activites-bloc3 {
       grid-area: Bloc3;
-      width: 95%;
+      width: 97%;
       height: 190px;
     }
 
@@ -596,7 +621,7 @@ Section h1 {
     .Activites-bloc4 {
       grid-area: Bloc4;
       margin-left: 10px;
-      width: 95%;
+      width: 97%;
       height: 240px;
     }
 
@@ -606,12 +631,12 @@ Section h1 {
 
     .Activites-bloc5 {
       grid-area: Bloc5;
-      width: 95%;
+      width: 97%;
       height: 190px;
     }
     .Activites-bloc6 {
       grid-area: Bloc6;
-      width: 95%;
+      width: 97%;
       height: 190px;
     }
   }
@@ -624,20 +649,20 @@ Section h1 {
 
   .main-nav {
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "logo inscription"
       "hébergement  actit";
-    column-gap: 5px;
+    column-gap: 2px;
   }
 
   .NavAct {
     grid-area: actit;
     display: flex;
     justify-content: center;
-    width: 98%;
-    border-bottom: 4px gray solid;
+    width: 100%;
+    border-bottom: 4px rgba(128, 128, 128, 0.164) solid;
     border-top: none;
     margin-top: -5px;
   }
@@ -646,12 +671,18 @@ Section h1 {
     border-top: none;
     border-bottom: 4px #0065fc solid;
   }
+  
+  .NavHeb:hover {
+    border-top: none;
+    border-bottom: 4px #0065fc solid;
+  }
 
   .NavHeb {
     grid-area: hébergement;
-    border-bottom: 4px #0065fc solid;
+    border-bottom: 4px rgba(128, 128, 128, 0.164) solid;
     border-top: none;
     margin-top: -5px;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -714,18 +745,21 @@ Section h1 {
 
   .Blocs-Hebergements {
     border: 1px #f2f2f2 solid;
-    padding: 10px;
+    margin-left: 30px;
+    padding-bottom: 5px;
     box-shadow: 4px 4px 4px 4px #f2f2f2;
   }
 
   .MostPopular {
-    margin-left: 4px;
+    padding: 5px;
     border-radius: 0px;
+    width: 100%;
   }
 
   .BlocPop {
     font-size: 16px;
-    grid-template-columns: 100px 180px;
+    padding-right: 6px;
+    grid-template-columns: 30% 68%;
   }
 
   .MostPopular h2 {
@@ -739,9 +773,10 @@ Section h1 {
   .Activites {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 0.85em;
-    margin-left: 50px;
+    font-size: 0.8em;
+    margin-left: 30px;
+    margin-top: -15px;
+    width: 89.4%;
   }
 
   .Activites-bloc1 img {
@@ -785,7 +820,7 @@ Section h1 {
 @media screen and (max-width: 300px) {
   .BlocPop {
     display: grid;
-    grid-template-columns: 100px 150px;
+    grid-template-columns: 100px 140px;
     grid-template-rows: 90px 40px;
     margin: 5px;
     column-gap: 8px;
@@ -803,7 +838,9 @@ Section h1 {
     padding-bottom: 40px;
     font-size: 14px;
   }
-
+  .Activites {
+    width: 80%;
+  }
   .Activites-bloc5 {
     font-size: 10px;
   }
