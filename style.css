@@ -213,7 +213,7 @@ nav a:hover {
 
 Section {
   display: grid;
-  grid-template-columns: 59% 39%;
+  grid-template-columns: 62% 35%;
   margin: 4px;
   gap: 2em;
   padding-left: 10px;
@@ -745,7 +745,8 @@ Section h1 {
 
   .Blocs-Hebergements {
     border: 1px #f2f2f2 solid;
-    margin-left: 30px;
+    margin-left: 15px;
+    width: 95%;
     padding-bottom: 5px;
     box-shadow: 4px 4px 4px 4px #f2f2f2;
   }
@@ -776,7 +777,7 @@ Section h1 {
     font-size: 0.8em;
     margin-left: 30px;
     margin-top: -15px;
-    width: 89.4%;
+    width: 92.5%;
   }
 
   .Activites-bloc1 img {
@@ -838,10 +839,12 @@ Section h1 {
     padding-bottom: 40px;
     font-size: 14px;
   }
-  .Activites {
-    width: 80%;
-  }
+
   .Activites-bloc5 {
     font-size: 10px;
+  }
+
+  .Blocs-Hebergements {
+    margin-left: 20px;
   }
 }
